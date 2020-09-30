@@ -169,6 +169,7 @@
 		<li><a href="/manual-beta/measures/net/">Net</a>
 		<li><a href="/manual-beta/measures/nowplaying/">NowPlaying</a>
 		<li><a href="/manual-beta/measures/plugin/">Plugin</a>
+		<li><a href="/manual-beta/measures/process/">Process</a>
 		<li><a href="/manual-beta/measures/recyclemanager/">RecycleManager</a>
 		<li><a href="/manual-beta/measures/registry/">Registry</a>
 		<li><a href="/manual-beta/measures/script/">Script</a>
@@ -187,7 +188,6 @@
 		<li><a href="/manual-beta/plugins/inputtext/">InputText</a>
 		<li><a href="/manual-beta/plugins/ping/">Ping</a>
 		<li><a href="/manual-beta/plugins/power/">Power</a>
-		<li><a href="/manual-beta/plugins/process/">Process</a>
 		<li><a href="/manual-beta/plugins/quote/">Quote</a>
 		<li><a href="/manual-beta/plugins/resmon/">ResMon</a>
 		<li><a href="/manual-beta/plugins/runcommand/">RunCommand</a>
@@ -270,7 +270,7 @@
 		<p><code>WindowX=(100 / 2)%</code></p>
 		
 		<br/><p>By default the position is relative to the <a href="/manual-beta/user-interface/manage/#Monitors">primary screen</a>. You can override this with <code>@<em>N</em></code> where <em>N</em> is 0 to 32 and denotes which screen to position the skin on (1-32) or the virtual desktop (0). The screen selection will apply to both <code>WindowX</code> and <code>WindowY</code> if the value is set on only one of them.</p>
-		<p><code>WindowX@2=200</code></p>
+		<p><code>WindowX=200@2</code></p>
 	</dd>
 
 	<dt id="AnchorXY"><code>AnchorX</code>, <code>AnchorY</code></dt>
@@ -287,9 +287,11 @@
 		
 		<br/><p>The <code>%</code> and <code>R</code> / <code>B</code> modifiers can be used together.</p>
 		<p><code>AnchorX=20%R</code></p>
-
-		<br/><p><code>AnchorX</code> and <code>AnchorY</code> will <b>not accept</b> formulas.</p>
 		
+		<br/><p>Both <code>AnchorX</code> and <code>AnchorY</code> will accept <a href="/manual-beta/formulas/">formulas</a>.<br/>
+		The formula must be enclosed in (parenthese), with any trailing <code>% / R / B</code> at the end, and outside the (parentheses).</p>
+		<p><code>AnchorX=(100 / 2)%</code></p>
+
 		<br/><p>As an example, by setting <code>WindowX</code>, <code>WindowY</code>, <code>AnchorX</code> and <code>AnchorY</code> all to 50% the config will be truly centered in the primary monitor regardless of screen resolution or aspect ratio.</p>
 	</dd>
 
