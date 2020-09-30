@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
 	<!-- Meta tags for proper character encoding and social media handling  -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
-	<meta itemprop="name" content="Manual - Rainmeter Docs">
-	<meta property="og:title" content="Manual - Rainmeter Docs">
+	<meta itemprop="name" content="Rainmeter Docs">
+	<meta property="og:title" content="Rainmeter Docs">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://www.rainmeter.net">
-	<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
-	<meta property="og:site_name" content="Rainmeter">
-	<meta property="og:locale" content="en_US" />
 
 	<!-- Page title  -->
-	<title>Manual - Rainmeter</title>
+	<title>Rainmeter</title>
 
 	<!-- Files need to be local for offline version of documentations -->
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/rainmeter.css">
-	<link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="/rainmeter-docs/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/rainmeter-docs/css/rainmeter.css">
+	<link rel="stylesheet" href="/rainmeter-docs/css/jquery.fancybox.min.css">
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
@@ -30,22 +27,24 @@
 
 <body>
 
-  <!-- Get current path and set it as an variable -->
+<!-- Get current path and set it as an variable -->
 
 
 <!-- Include navbar -->
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
 	<div class="container">
-		<a class="navbar-brand" href="https://docs.rainmeter.net"><img src="\img\logo_nav.png" alt=""></a>
+		<a class="navbar-brand" href="https://docs.rainmeter.net"><img src="\rainmeter-docs\img\logo_nav.png" alt=""></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+			<span class="navbar-toggler-icon"></span>		</button>
 		<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
 			<ul class="navbar-nav order-12">
-				<li class="nav-item "><a class="nav-link" href="//rainmeter.net/">Home</a></li>
-				<li class="nav-item active"><a class="nav-link" href="//docs.rainmeter.net/">Documentation</a></li>
-				<li class="nav-item "><a class="nav-link" href="//rainmeter.net/discover">Discover</a></li>
-				<li class="nav-item "><a class="nav-link" href="//forum.rainmeter.net">Community</a></li>
+				<li class="nav-item "><a class="nav-link" href="https://rainmeter.net/" marked="1">主站</a>				</li>
+				<li class="nav-item active"><a class="nav-link" href="https://docs.rainmeter.net/"
+						marked="1">文档(英文)</a></li>
+				<li class="nav-item "><a class="nav-link" href="https://rainmeter.net/discover"
+						marked="1">发现(英文)</a></li>
+				<li class="nav-item "><a class="nav-link" href="https://forum.rainmeter.net/"
+						marked="1">社区(英文)</a></li>
 				<div class="dropdown-divider"></div>
 			</ul>
 		</div>
@@ -56,8 +55,7 @@
     <div id="nav-button" class="docs-nav-button">
       <div class="container d-flex flex-row align-items-center">
       <svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-      <a onclick="openNavMenu()">Open navigation</a>
-  </div>
+      <a onClick="openNavMenu()">Open navigation</a>  </div>
 </div>
 
   <div class="container">
@@ -67,165 +65,165 @@
       <div id="menu" class="docs-nav col-12 col-lg-3">
         
 
-<h4 id="category"><a href="/manual">4.3 Final Manual</a></h4>
+<h4 id="category"><a href="/rainmeter-docs/manual/">4.3 Final版文档</a></h4>
 <svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 <form id="search-form" method="get" action="https://www.google.com/search">
   <input name="sitesearch" value="docs.rainmeter.net" type="hidden">
-  <input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+  <input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="用Google搜索文档内容..." type="text">
 </form>
 <hr />
 <nav id="sidenav" class="sidenav">
-<h4>Contents</h4>
+<h4>内容</h4>
 <ul class="docs-nav-block">
-	<li><a href="/manual/getting-started/">Getting Started</a>
+	<li><a href="/rainmeter-docs/manual/getting-started/">入门</a>
 		<ul>
-		<li><a href="/manual/getting-started/setting-up/">Setting Up</a>
-		<li><a href="/manual/getting-started/using-rainmeter/">Using Rainmeter</a>
-		<li><a href="/manual/getting-started/customizing/">Customizing</a>
-		<li><a href="/manual/getting-started/creating-skins/">Creating Skins</a>
-		<li><a href="/manual/getting-started/skin-anatomy/">Anatomy of a Skin</a>
-		<li><a href="/manual/getting-started/basic-tutorials/">Basic Tutorials</a>
+		<li><a href="/rainmeter-docs/manual/getting-started/setting-up/">安装</a>
+		<li><a href="/rainmeter-docs/manual/getting-started/using-rainmeter/">使用Rainmeter</a>
+		<li><a href="/rainmeter-docs/manual/getting-started/customizing/">个性化</a>
+		<li><a href="/rainmeter-docs/manual/getting-started/creating-skins/">编写皮肤</a>
+		<li><a href="/rainmeter-docs/manual/getting-started/skin-anatomy/">剖析皮肤结构</a>
+		<li><a href="/rainmeter-docs/manual/getting-started/basic-tutorials/">基础教程</a>
 			<ul>
-			<li><a href="/manual/getting-started/basic-tutorials/launcher/">Launcher</a>
-			<li><a href="/manual/getting-started/basic-tutorials/clock/">Clock</a>
-			<li><a href="/manual/getting-started/basic-tutorials/system/">System</a>
+			<li><a href="/rainmeter-docs/manual/getting-started/basic-tutorials/launcher/">应用启动器</a>
+			<li><a href="/rainmeter-docs/manual/getting-started/basic-tutorials/clock/">时钟</a>
+			<li><a href="/rainmeter-docs/manual/getting-started/basic-tutorials/system/">资源监视器</a>
 			</ul>
 		</ul>
-	<li><a href="/manual/installing-rainmeter/">Installing Rainmeter</a>
-	<li><a href="/manual/user-interface/">User Interface</a>
+	<li><a href="/rainmeter-docs/manual/installing-rainmeter/">安装Rainmeter</a>
+	<li><a href="/rainmeter-docs/manual/user-interface/">用户界面</a>
 		<ul>
-		<li><a href="/manual/user-interface/manage/">Manage</a>
+		<li><a href="/rainmeter-docs/manual/user-interface/manage/">管理</a>
 	<ul>
-		<li><a href="/manual/user-interface/manage/new-skin">New Skin</a>
+		<li><a href="/rainmeter-docs/manual/user-interface/manage/new-skin">新皮肤</a>
 	</ul>
-		<li><a href="/manual/user-interface/about/">About</a>
-		<li><a href="/manual/user-interface/context-menus/">Context Menus</a>
+		<li><a href="/rainmeter-docs/manual/user-interface/about/">关于</a>
+		<li><a href="/rainmeter-docs/manual/user-interface/context-menus/">右键菜单</a>
 		</ul>
-	<li><a href="/manual/installing-skins/">Installing Skins</a>
-	<li><a href="/manual/arranging-skins/">Arranging Skins</a>
-	<li><a href="/manual/distributing-skins/">Distributing Skins</a>
+	<li><a href="/rainmeter-docs/manual/installing-skins/">安装皮肤</a>
+	<li><a href="/rainmeter-docs/manual/arranging-skins/">整理皮肤</a>
+	<li><a href="/rainmeter-docs/manual/distributing-skins/">发布皮肤</a>
 	<ul>
-		<li><a href="/manual/distributing-skins/vault-folder/">@Vault Folder</a>
+		<li><a href="/rainmeter-docs/manual/distributing-skins/vault-folder/">@Vault文件夹</a>
 	</ul>
 	</ul>
 
-	<h4>Reference</h4>
+	<h4>参考手册</h4>
 	<ul class="docs-nav-block">
-	<li><a href="/manual/settings/">Settings</a>
+	<li><a href="/rainmeter-docs/manual/settings/">设置</a>
 		<ul>
-		<li><a href="/manual/settings/rainmeter-section/">[Rainmeter] Section</a>
-		<li><a href="/manual/settings/traymeasure-section/">[TrayMeasure] Section</a>
-		<li><a href="/manual/settings/skin-sections/">[Skin] Sections</a>
+		<li><a href="/rainmeter-docs/manual/settings/rainmeter-section/">[Rainmeter]节点</a>
+		<li><a href="/rainmeter-docs/manual/settings/traymeasure-section/">[TrayMeasure]节点</a>
+		<li><a href="/rainmeter-docs/manual/settings/skin-sections/">[Skin]节点</a>
 		</ul>
-	<li><a href="/manual/skins/">Skins</a>
+	<li><a href="/rainmeter-docs/manual/skins/">皮肤</a>
 		<ul>
-		<li><a href="/manual/skins/option-types/">Option Types</a>
-		<li><a href="/manual/skins/rainmeter-section/">[Rainmeter] Section</a>
-		<li><a href="/manual/skins/metadata-section/">[Metadata] Section</a>
-		<li><a href="/manual/skins/include-option/">@Include Options</a>
-		<li><a href="/manual/skins/resources-folder/">@Resources Folder</a>
+		<li><a href="/rainmeter-docs/manual/skins/option-types/">代码格式</a>
+		<li><a href="/rainmeter-docs/manual/skins/rainmeter-section/">[Rainmeter]节点/a>
+		<li><a href="/rainmeter-docs/manual/skins/metadata-section/">[Metadata]节点</a>
+		<li><a href="/rainmeter-docs/manual/skins/include-option/">@Include选项</a>
+		<li><a href="/rainmeter-docs/manual/skins/resources-folder/">@Resources文件夹</a>
 		</ul>
-	<li><a href="/manual/meters/">Meters</a>
+	<li><a href="/rainmeter-docs/manual/meters/">Meters</a>
 		<ul>
-		<li><a href="/manual/meters/general-options/">General Options</a>
+		<li><a href="/rainmeter-docs/manual/meters/general-options/">通用选项</a>
 			<ul>
-			<li><a href="/manual/meters/general-options/image-options/">Image Options</a>
-			<li><a href="/manual/meters/general-options/meterstyles/">MeterStyles</a>
-			<li><a href="/manual/meters/general-options/tooltips/">Tooltips</a>
-			<li><a href="/manual/meters/general-options/container/">Container</a>
+			<li><a href="/rainmeter-docs/manual/meters/general-options/image-options/">图像选项</a>
+			<li><a href="/rainmeter-docs/manual/meters/general-options/meterstyles/">Meter样式</a>
+			<li><a href="/rainmeter-docs/manual/meters/general-options/tooltips/">Tooltips 工具贴士</a>
+			<li><a href="/rainmeter-docs/manual/meters/general-options/container/">Container 容器</a>
 			</ul>
-		<li><a href="/manual/meters/bar/">Bar</a>
-		<li><a href="/manual/meters/bitmap/">Bitmap</a>
-		<li><a href="/manual/meters/button/">Button</a>
-		<li><a href="/manual/meters/histogram/">Histogram</a>
-		<li><a href="/manual/meters/image/">Image</a>
-		<li><a href="/manual/meters/line/">Line</a>
-		<li><a href="/manual/meters/rotator/">Rotator</a>
-		<li><a href="/manual/meters/roundline/">Roundline</a>
-		<li><a href="/manual/meters/shape/">Shape</a>
-		<li><a href="/manual/meters/string/">String</a>
+		<li><a href="/rainmeter-docs/manual/meters/bar/">Bar 直长条</a>
+		<li><a href="/rainmeter-docs/manual/meters/bitmap/">Bitmap 位图</a>
+		<li><a href="/rainmeter-docs/manual/meters/button/">Button 按钮</a>
+		<li><a href="/rainmeter-docs/manual/meters/histogram/">Histogram 直方图</a>
+		<li><a href="/rainmeter-docs/manual/meters/image/">Image 图像</a>
+		<li><a href="/rainmeter-docs/manual/meters/line/">Line 线条</a>
+		<li><a href="/rainmeter-docs/manual/meters/rotator/">Rotator 旋转</a>
+		<li><a href="/rainmeter-docs/manual/meters/roundline/">Roundline 环形条</a>
+		<li><a href="/rainmeter-docs/manual/meters/shape/">Shape 形状</a>
+		<li><a href="/rainmeter-docs/manual/meters/string/">String 字符串</a>
 	<ul>
-		<li><a href="/manual/meters/string/inline/">Inline Options</a>
+		<li><a href="/rainmeter-docs/manual/meters/string/inline/">内联选项</a>
 	</ul>
 		</ul>
-	<li><a href="/manual/measures/">Measures</a>
+	<li><a href="/rainmeter-docs/manual/measures/">Measures</a>
 		<ul>
-		<li><a href="/manual/measures/general-options/">General Options</a>
+		<li><a href="/rainmeter-docs/manual/measures/general-options/">通用选项</a>
 			<ul>
-			<li><a href="/manual/measures/general-options/ifactions/">IfActions</a>
-			<li><a href="/manual/measures/general-options/ifconditions/">IfConditions</a>
-			<li><a href="/manual/measures/general-options/ifmatchactions/">IfMatchActions</a>
-			<li><a href="/manual/measures/general-options/substitute/">Substitute</a>
+			<li><a href="/rainmeter-docs/manual/measures/general-options/ifactions/">If动作</a>
+			<li><a href="/rainmeter-docs/manual/measures/general-options/ifconditions/">If条件</a>
+			<li><a href="/rainmeter-docs/manual/measures/general-options/ifmatchactions/">字符串匹配动作</a>
+			<li><a href="/rainmeter-docs/manual/measures/general-options/substitute/">Substitute</a>
 			</ul>
-		<li><a href="/manual/measures/calc/">Calc</a>
-		<li><a href="/manual/measures/cpu/">CPU</a>
-		<li><a href="/manual/measures/freediskspace/">FreeDiskSpace</a>
-		<li><a href="/manual/measures/loop/">Loop</a>
-		<li><a href="/manual/measures/mediakey/">MediaKey</a>
-		<li><a href="/manual/measures/memory/">Memory</a>
-		<li><a href="/manual/measures/net/">Net</a>
-		<li><a href="/manual/measures/nowplaying/">NowPlaying</a>
-		<li><a href="/manual/measures/plugin/">Plugin</a>
-		<li><a href="/manual/measures/recyclemanager/">RecycleManager</a>
-		<li><a href="/manual/measures/registry/">Registry</a>
-		<li><a href="/manual/measures/script/">Script</a>
-		<li><a href="/manual/measures/string/">String</a>
-		<li><a href="/manual/measures/time/">Time</a>
-		<li><a href="/manual/measures/uptime/">Uptime</a>
-		<li><a href="/manual/measures/webparser/">WebParser</a>
+		<li><a href="/rainmeter-docs/manual/measures/calc/">Calc 数学</a>
+		<li><a href="/rainmeter-docs/manual/measures/cpu/">CPU</a>
+		<li><a href="/rainmeter-docs/manual/measures/freediskspace/">FreeDiskSpace 磁盘剩余空间</a>
+		<li><a href="/rainmeter-docs/manual/measures/loop/">Loop 循环</a>
+		<li><a href="/rainmeter-docs/manual/measures/mediakey/">MediaKey 多媒体按键</a>
+		<li><a href="/rainmeter-docs/manual/measures/memory/">Memory 内存</a>
+		<li><a href="/rainmeter-docs/manual/measures/net/">Net 网络</a>
+		<li><a href="/rainmeter-docs/manual/measures/nowplaying/">NowPlaying 正在播放</a>
+		<li><a href="/rainmeter-docs/manual/measures/plugin/">Plugin 插件</a>
+		<li><a href="/rainmeter-docs/manual/measures/recyclemanager/">RecycleManager 回收站管理</a>
+		<li><a href="/rainmeter-docs/manual/measures/registry/">Registry 注册表</a>
+		<li><a href="/rainmeter-docs/manual/measures/script/">Script 脚本</a>
+		<li><a href="/rainmeter-docs/manual/measures/string/">String 字符串</a>
+		<li><a href="/rainmeter-docs/manual/measures/time/">Time 时间</a>
+		<li><a href="/rainmeter-docs/manual/measures/uptime/">Uptime 系统运行时间</a>
+		<li><a href="/rainmeter-docs/manual/measures/webparser/">WebParser 网页解析器</a>
 		</ul>
-	<li><a href="/manual/plugins/">Plugins</a>
+	<li><a href="/rainmeter-docs/manual/plugins/">Plugins 插件</a>
 		<ul>
-		<li><a href="/manual/plugins/actiontimer/">ActionTimer</a>
-		<li><a href="/manual/plugins/audiolevel/">AudioLevel</a>
-		<li><a href="/manual/plugins/coretemp/">CoreTemp</a>
-		<li><a href="/manual/plugins/fileview/">FileView</a>
-		<li><a href="/manual/plugins/folderinfo/">FolderInfo</a>
-		<li><a href="/manual/plugins/inputtext/">InputText</a>
-		<li><a href="/manual/plugins/ping/">Ping</a>
-		<li><a href="/manual/plugins/power/">Power</a>
-		<li><a href="/manual/plugins/process/">Process</a>
-		<li><a href="/manual/plugins/quote/">Quote</a>
-		<li><a href="/manual/plugins/resmon/">ResMon</a>
-		<li><a href="/manual/plugins/runcommand/">RunCommand</a>
-		<li><a href="/manual/plugins/speedfan/">SpeedFan</a>
-		<li><a href="/manual/plugins/sysinfo/">SysInfo</a>
-		<li><a href="/manual/plugins/usagemonitor/">UsageMonitor</a>
-		<li><a href="/manual/plugins/wifistatus/">WiFiStatus</a>
-		<li><a href="/manual/plugins/win7audio/">Win7Audio</a>
-		<li><a href="/manual/plugins/windowmessage/">WindowMessage</a>
-		<li><a href="/manual/plugins/deprecated/">Deprecated Plugins</a>
+		<li><a href="/rainmeter-docs/manual/plugins/actiontimer/">ActionTimer</a>
+		<li><a href="/rainmeter-docs/manual/plugins/audiolevel/">AudioLevel</a>
+		<li><a href="/rainmeter-docs/manual/plugins/coretemp/">CoreTemp</a>
+		<li><a href="/rainmeter-docs/manual/plugins/fileview/">FileView</a>
+		<li><a href="/rainmeter-docs/manual/plugins/folderinfo/">FolderInfo</a>
+		<li><a href="/rainmeter-docs/manual/plugins/inputtext/">InputText</a>
+		<li><a href="/rainmeter-docs/manual/plugins/ping/">Ping</a>
+		<li><a href="/rainmeter-docs/manual/plugins/power/">Power</a>
+		<li><a href="/rainmeter-docs/manual/plugins/process/">Process</a>
+		<li><a href="/rainmeter-docs/manual/plugins/quote/">Quote</a>
+		<li><a href="/rainmeter-docs/manual/plugins/resmon/">ResMon</a>
+		<li><a href="/rainmeter-docs/manual/plugins/runcommand/">RunCommand</a>
+		<li><a href="/rainmeter-docs/manual/plugins/speedfan/">SpeedFan</a>
+		<li><a href="/rainmeter-docs/manual/plugins/sysinfo/">SysInfo</a>
+		<li><a href="/rainmeter-docs/manual/plugins/usagemonitor/">UsageMonitor</a>
+		<li><a href="/rainmeter-docs/manual/plugins/wifistatus/">WiFiStatus</a>
+		<li><a href="/rainmeter-docs/manual/plugins/win7audio/">Win7Audio</a>
+		<li><a href="/rainmeter-docs/manual/plugins/windowmessage/">WindowMessage</a>
+		<li><a href="/rainmeter-docs/manual/plugins/deprecated/">不推荐使用的插件</a>
 			<ul>
-			<li><a href="/manual/plugins/deprecated/advancedcpu/">AdvancedCPU</a>
-			<li><a href="/manual/plugins/deprecated/itunes/">iTunes</a>
-			<li><a href="/manual/plugins/deprecated/perfmon/">PerfMon</a>
+			<li><a href="/rainmeter-docs/manual/plugins/deprecated/advancedcpu/">AdvancedCPU</a>
+			<li><a href="/rainmeter-docs/manual/plugins/deprecated/itunes/">iTunes</a>
+			<li><a href="/rainmeter-docs/manual/plugins/deprecated/perfmon/">PerfMon</a>
 			</ul>
 		</ul>
-	<li><a href="/manual/bangs/">Bangs</a>
-	<li><a href="/manual/formulas/">Formulas</a>
-	<li><a href="/manual/variables/">Variables</a>
+	<li><a href="/rainmeter-docs/manual/bangs/">Bang指令</a>
+	<li><a href="/rainmeter-docs/manual/formulas/">公式</a>
+	<li><a href="/rainmeter-docs/manual/variables/">变量</a>
 		<ul>
-		<li><a href="/manual/variables/nesting-variables/">Nesting Variables</a>
-		<li><a href="/manual/variables/built-in-variables/">Built-In Variables</a>
-		<li><a href="/manual/variables/section-variables/">Section Variables</a>
-		<li><a href="/manual/variables/character-variables/">Character Variables</a>
-		<li><a href="/manual/variables/mouse-variables/">Mouse Variables</a>
+		<li><a href="/rainmeter-docs/manual/variables/nesting-variables/">嵌套变量</a>
+		<li><a href="/rainmeter-docs/manual/variables/built-in-variables/">内置变量</a>
+		<li><a href="/rainmeter-docs/manual/variables/section-variables/">节点变量</a>
+		<li><a href="/rainmeter-docs/manual/variables/character-variables/">字符变量</a>
+		<li><a href="/rainmeter-docs/manual/variables/mouse-variables/">鼠标变量</a>
 		</ul>
-	<li><a href="/manual/groups/">Groups</a>
-	<li><a href="/manual/mouse-actions/">Mouse Actions</a>
-	<li><a href="/manual/lua-scripting/">Lua Scripting</a>
+	<li><a href="/rainmeter-docs/manual/groups/">组</a>
+	<li><a href="/rainmeter-docs/manual/mouse-actions/">鼠标动作</a>
+	<li><a href="/rainmeter-docs/manual/lua-scripting/">Lua脚本</a>
 		<ul>
-		<li><a href="/manual/lua-scripting/inline-lua/">Inline Lua</a>
+		<li><a href="/rainmeter-docs/manual/lua-scripting/inline-lua/">内联Lua</a>
 		</ul>
 	</ul>
 
-	<h4>More</h4>
+	<h4>其它</h4>
 	<ul class="docs-nav-block">
-	<li><a href="/manual-beta/">4.4 Beta Manual</a>
-	<li><a href="/tips/">Tips &amp; Tricks</a>
-	<li><a href="/snippets/">Snippets</a>
-	<li><a href="/developers/">Developers</a>
-	<li><a href="/history/">Version History</a>
+	<li><a href="/rainmeter-docs/rainmeter-docs/manual-beta/">4.4 Beta版手册</a>
+	<li><a href="/rainmeter-docs/tips/">提示与技巧</a>
+	<li><a href="/rainmeter-docssnippets/">Lua代码片段</a>
+	<li><a href="/rainmeter-docs/developers/">开发者</a>
+	<li><a href="/rainmeter-docs/history/">版本历史</a>
 	</ul>
 
 </nav>
@@ -234,56 +232,55 @@
 
       <!-- Content -->
       <div class="docs-content col-12 col-lg-9">
-        <h1 class="page-title">Manual</h1>
+        <h1 class="page-title">手册</h1>
         <hr />
         <!-- Include content and Replace "!" in every url with correct path -->
-        <p>Rainmeter displays customizable skins, like memory and battery charge, RSS feeds and weather forecasts, right on your desktop. Many skins are even functional: they can record your notes and to-do lists, launch your favorite applications, and control your media player - all in a clean, unobtrusive interface that you can rearrange and customize to your liking. Rainmeter is at once an application and a toolkit. You are limited only by your imagination and creativity.</p>
+        <p>Rainmeter 能在您的桌面上展示可自定义的皮肤，例如内存占用或者是电池电量， RSS 订阅和天气预报等。许多皮肤甚至有着更加复杂的功能:它们可以记录下您的笔记或是代办清单，启动您所喜欢的软件，或是控制您的媒体播放器 - 这一切都发生在一个干净、简介的界面中，您可以根据您的喜好随时对各个窗口进行重新排序和自定义。 Rainmeter 既是一个软件也是一个工具包，您仅会受到您的想象力和创造力的限制。</p>
 
-<h2 id="GettingStarted">Getting started with Rainmeter</h2>
+<h2 id="GettingStarted">入门 Rainmeter</h2>
 
-<p>After <a href="http://www.rainmeter.net">downloading</a> and <a href="/manual/installing-rainmeter/">installing</a> Rainmeter, the very next stop should be <a href="/manual/getting-started/">Getting Started</a>.</p>
+<p>在 <a href="http://www.rainmeter.net">下载</a> 和 <a href="/rainmeter-docs/manual/installing-rainmeter/">安装</a> Rainmeter 后，下一步就是 <a href="/rainmeter-docs/manual/getting-started/">入门</a> 了。</p>
 
-<p>Getting Started is a <b>new user</b> introduction to Rainmeter, covering both how to use the application, and starting guides and tutorials for creating and editing skins.</p>
+<p>入门是一个面对 <b>新用户</b> 的关于 Rainmeter 的介绍，包括了如何使用 Rainmeter 以及关于创建和编辑皮肤的入门教程。</p>
 
-<p>Using the rest of this documentation, and the experience of using and learning Rainmeter, will be much easier and more enjoyable with the overview Getting Started provides.</p>
+<p>对入门章节的阅读将会使您对阅读手册的其余部分以及使用 Rainmeter 的过程感到更加的轻松和愉快</p>
 
-<h2 id="UsingRainmeter">Using the Rainmeter application</h2>
+<h2 id="UsingRainmeter">使用 Rainmeter</h2>
 
-<p>The <a href="/manual/user-interface/">User Interface</a> section of the manual describes how to use the application to manage Rainmeter on the desktop. Control things with the <a href="/manual/user-interface/manage/">Manage</a> interface and <a href="/manual/user-interface/context-menus/">context menus</a>, and monitor important information using <a href="/manual/user-interface/about/">About</a>.</p>
+<p>手册的 <a href="/rainmeter-docs/manual/user-interface/">用户界面</a> 一节介绍了如何使用本软件在桌面上管理Rainmeter。 使用 <a href="/rainmeter-docs/manual/user-interface/manage/">管理</a> 界面和 <a href="/rainmeter-docs/manual/user-interface/context-menus/">右键菜单</a> 来进行控制, 并使用 <a href="/rainmeter-docs/manual/user-interface/about/">关于</a> 来监视重要信息。</p>
 
-<p>It won't be long before you want to extend your library of skins beyond the default <b>illustro</b> suite included with Rainmeter, with others downloaded from the internet. The <a href="/manual/installing-skins/">Installing Skins</a> section explains how to install and load the thousands of skins available for Rainmeter.</p>
+<p>不久您就会想要使用在网络上下载的其它皮肤扩展那个仅有 Rainmeter 自带的 <b>illustro</b> 套装的皮肤库。 <a href="/rainmeter-docs/manual/installing-skins/">安装皮肤</a> 一节阐述了应如何安装和加载那些适用于 Rainmeter 的皮肤。</p>
 
-<h2 id="CreateEditSkins">Creating and editing skins</h2>
+<h2 id="CreateEditSkins">编写和编辑皮肤</h2>
 
-<p>Rainmeter can be used as a straightforward skin manager, loading and using skins created by others. However, the real power and fun of Rainmeter can only be unlocked when the transition is made from "user" to "author". The <a href="/manual/#Reference">Reference</a> section of the manual contains everything needed to craft that perfect skin that does exactly what you require, and looks just right on your desktop.</p>
+<p>Rainmeter 可以直接当做一个皮肤管理器来使用，您可以使用它来加载和使用他人制作的皮肤。但是，只有在你从"使用者"变为"创造者"后，Rainmeter 的真正乐趣和力量才会体现出来。手册的 <a href="/rainmeter-docs/manual/#Reference">参考</a> 部分包含了如何制作一个能满足你需要的皮肤的全部所需内容。</p>
 
-<p><a href="/manual/settings/">Settings</a> contains detailed information about the <b>Rainmeter.ini</b> file, which controls many important aspects of Rainmeter on the desktop.</p>
+<p><a href="/rainmeter-docs/manual/settings/">设置</a> 包含了有关控制了 Rainmeter 许多重要方面的 <b>Rainmeter.ini</b> 文件的详细信息。</p>
 
-<p>The <a href="/manual/skins/">Skins</a> section describes what a skin's .ini file contains and does. It also is a reference for several powerful overall skin features.</p>
+<p><a href="/rainmeter-docs/manual/skins/">Skins</a> 一节介绍了皮肤的 .ini 文件所包含的内容以及它们的功能。它也能作为皮肤强大特性的一个参考。</p>
 
-<p>The next sections, <a href="/manual/meters/">Meters</a>, <a href="/manual/measures/">Measures</a> and <a href="/manual/plugins/">Plugins</a>, are the core information for creating skins. Measures and plugins gather information from the system or the internet, and meters display things, with many different meter types and practically unlimited control over style.</p>
+<p>下面的 <a href="/rainmeter-docs/manual/meters/">Meters</a>, <a href="/rainmeter-docs/manual/measures/">Measures</a> 和 <a href="/rainmeter-docs/manual/plugins/">Plugins</a> 三节中包含了制作一个皮肤的核心内容。Measures 和 plugins 负责从系统和网络中收集信息，而 meters 则使用不同的类型来显示东西，几乎不受样式的限制。</p>
 
-<p>The following sections provide a reference for other powerful skin options and features. Bring skins to life with <a href="/manual/bangs/">Bangs</a> and <a href="/manual/mouse-actions/">Mouse Actions</a>, and extend Rainmeter's functionality using the <a href="/manual/lua-scripting/">Lua Scripting</a> language.</p>
+<p>下面的章节为一些有用的皮肤选项和特性提供了相应的内容参考。用 <a href="/rainmeter-docs/manual/bangs/">Bangs</a> 和 <a href="/rainmeter-docs/manual/mouse-actions/">Mouse Actions</a> 让你的皮肤动起来，同时您也可以使用 <a href="/rainmeter-docs/manual/lua-scripting/">Lua Scripting</a> 语言来扩展 Rainmeter 的功能。</p>
 
-<p>One of the most exciting things about Rainmeter is the free and open sharing of skins in the community. See <a href="/manual/publishing-skins/">Publishing Skins</a> for everything needed to package and distribute suites and skins.</p>
+<p>Rainmeter 中最让人激动的事就是在社区中的免费且开放的皮肤分享。 在 <a href="/rainmeter-docs/manual/publishing-skins/">发布皮肤</a> 一节中了解关于打包和搭建套装和皮肤的相关知识。</p>
 
-<h2 id="MoreInformation">More information</h2>
+<h2 id="MoreInformation">更多信息</h2>
 
-<p>Be sure to check the <a href="/tips/">Tips &amp; Tricks</a> section for a wealth of guides and suggestions from the Rainmeter community.</p>
+<p><span lang="zh-CN"><span title="">请务必查看</span></span> <a href="/rainmeter-docs/tips/">提示与技巧</a> 一节<span lang="zh-CN"><span title="">，以获取 Rainmeter 社区提供的大量指南和建议。</span></span></p>
 
-<p>The <a href="/snippets/">Snippets</a> section contains a collection of useful "snippets" of Lua script code, from the Rainmeter Team and users.</p>
+<p><a href="/rainmeter-docssnippets/">Lua代码片段</a><a href="/rainmeter-docs/snippets/"></a> 一节包含了来自 Rainmeter 团队和用户的有用的Lua代码片段集合。</p>
 
-<p>Remember, there is an entire community of people willing and able to help when things get stuck. Be sure to use the <a href="//forum.rainmeter.net/">Rainmeter Forum</a> or jump on the web-based <a href="http://webchat.freenode.net/?channels=rainmeter">IRC channel</a> when help is needed.</p>
+<p><span lang="zh-CN"><span title="">请记住，当事情陷入困境时，会有一群人愿意并且能够提供帮助。</span> <span title="">确保需要帮助时，使用</span></span> <a href="//forum.rainmeter.net/">Rainmeter 论坛</a><span lang="zh-CN"><span title=""> 或跳至基于Web的</span></span> <a href="http://webchat.freenode.net/?channels=rainmeter">IRC 频道</a> 。</p>
 
 <hr>
 
-<p><b>Note:</b> Most option entries and header text in the manual can be selected with <b>CTRL-Click</b> to add an <b>#anchor</b> to the URL. This makes it easy to link to a specific part of a page. Try it below.</p>
+<p><b>提示:</b> <span lang="zh-CN"><span title="">手册中的大多数选项条目和标题文本</span></span><span lang="zh-CN"><span title="">可以使用</span></span><b>CTRL+左键单击</b> 来给网页链接添加一个 <b>#锚点</b> 。 <span lang="zh-CN"><span title="">这样可以轻松链接到页面的特定部分。</span> <span title="">请在下面尝试。</span></span></p>
 
 <dl>
-	<dt id="SampleOption"><code>SampleOption</code></dt>
+	<dt id="SampleOption"><code>示例选项</code></dt>
 	<dd></dd>
 </dl>
-
       </div>
 
     </div>
@@ -291,24 +288,28 @@
 
 </div>
 
-<!-- Include Footer -->
-<footer id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-6">Made with ❤ by the community.</div>
-      <div class="col-6 text-right text-md-right">Icons by <a href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
-    </div>
-  </div>
-</footer>
+<!-- Include Footer -->	
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">由Rainmeter社区用❤制造&nbsp;&nbsp;此翻译是<a
+						href="https://github.com/Zerbats/rainmeter-docs/tree/gh-pages"
+						target="_blank">开源</a>的,如果有问题欢迎提issue或私信<a href="https://space.bilibili.com/184544461" target="_blank">@Zerbat</a></div>
+				<div class="col-6 text-right text-md-right">图标来自<a href="http://www.freepik.com/" alt="Freepik"
+						marked="1">Freepik</a>和<a href="https://feathericons.com/" alt="feathericons"
+						marked="1">feathericons.com</a></div>
+			</div>
+		</div>
+	</footer>
 
 
 
 	<!-- Javascript files  -->
-	<script src="/js/main.js"></script>
-	<script src="/js/jquery-3.2.1.slim.min.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/ahk-sliding-panel.js"></script>
-	<script src="/js/jquery.fancybox.min.js"></script>
+	<script src="/rainmeter-docs/js/main.js"></script>
+	<script src="/rainmeter-docs/js/jquery-3.2.1.slim.min.js"></script>
+	<script src="/rainmeter-docs/js/bootstrap.min.js"></script>
+	<script src="/rainmeter-docs/js/ahk-sliding-panel.js"></script>
+	<script src="/rainmeter-docs/js/jquery.fancybox.min.js"></script>
 
 	<!-- Script for the slideout menu on mobile -->
 	<script>
